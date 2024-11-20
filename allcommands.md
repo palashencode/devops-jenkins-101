@@ -14,6 +14,7 @@ docker pull devopsjourney1/jenkins-blueocean:2.332.3-1 && docker tag devopsjourn
 
 # create network
 docker network create jenkins
+cd /var/jenkins_home
 
 # Windows
 docker run --name jenkins-blueocean --restart=on-failure --detach `
@@ -33,6 +34,10 @@ docker exec -it jenkins-blueocean bash
 docker run -d --restart=always -p 127.0.0.1:2376:2375 --network jenkins -v /var/run/docker.sock:/var/run/docker.sock alpine/socat tcp-listen:2375,fork,reuseaddr unix-connect:/var/run/docker.sock
 
 docker inspect <container_id> | grep IPAddress
+# Docker Host URL tcp://<IP>:2375
+# jenkins/agent:alpine-jdk11
+# devopsjourney1/myjenkinsagents:python
+# /home/jenkins
 
 # Jenkins Python Agent 
 docker pull devopsjourney1/myjenkinsagents:python
