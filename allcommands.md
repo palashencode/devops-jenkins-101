@@ -26,6 +26,9 @@ docker run --name jenkins-blueocean --restart=on-failure --detach `
 # Get Password - https://localhost:8080/
 docker exec jenkins-blueocean cat /var/jenkins_home/secrets/initialAdminPassword
 
+# SSH into Docker
+docker exec -it jenkins-blueocean bash
+
 # Get Docker Host IP
 docker run -d --restart=always -p 127.0.0.1:2376:2375 --network jenkins -v /var/run/docker.sock:/var/run/docker.sock alpine/socat tcp-listen:2375,fork,reuseaddr unix-connect:/var/run/docker.sock
 
