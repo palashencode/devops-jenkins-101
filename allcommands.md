@@ -1,9 +1,9 @@
 ## Rereference Links 
-Tutorial Video - https://youtu.be/6YZvp2GwT0A 
-Original Github - https://github.com/devopsjourney1/jenkins-101
-My Github - https://github.com/palashencode/devops-jenkins-101
-Official Docs - https://www.jenkins.io/doc/
-Jenkins Docker Install - https://www.jenkins.io/doc/book/installing/docker/
+- Tutorial Video - https://youtu.be/6YZvp2GwT0A 
+- Original Github - https://github.com/devopsjourney1/jenkins-101
+- My Github - https://github.com/palashencode/devops-jenkins-101
+- Official Docs - https://www.jenkins.io/doc/
+- Jenkins Docker Install - https://www.jenkins.io/doc/book/installing/docker/
 
 ## Combined Commands
 ``` bash
