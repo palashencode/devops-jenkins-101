@@ -1,4 +1,4 @@
-## Rereference Links 
+## Reference Links 
 - Tutorial Video - https://youtu.be/6YZvp2GwT0A 
 - Original Github - https://github.com/devopsjourney1/jenkins-101
 - My Github - https://github.com/palashencode/devops-jenkins-101
